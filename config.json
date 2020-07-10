@@ -1,18 +1,17 @@
 {
-    "app_id": "task-tracker-tutorial-yrwxe",
-    "config_version": 20200603,
-    "name": "task-tracker-tutorial",
-    "location": "US-VA",
-    "deployment_model": "GLOBAL",
-    "security": {},
-    "custom_user_data_config": {
-        "enabled": true,
-        "mongo_service_id": "5f02e97bcb81d43e137d3720",
-        "database_name": "tracker",
-        "collection_name": "users",
-        "user_id_field": "user_id"
-    },
-    "sync": {
-        "development_mode_enabled": false
-    }
+  "app_id": "task-tracker-tutorial-yrwxe",
+  "config_version": 20200603,
+  "location": "US-VA",
+  "deployment_model": "GLOBAL",
+  "security": {},
+  "custom_user_data_config": {
+    "enabled": true,
+    "mongo_service_id": "5f02e97bcb81d43e137d3720",
+    "database_name": "tracker",
+    "collection_name": "users",
+    "user_id_field": "user_id"
+  },
+  "sync": {
+    "development_mode_enabled": false
+  }
 }
