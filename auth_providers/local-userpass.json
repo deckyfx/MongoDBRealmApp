@@ -1,0 +1,15 @@
+{
+    "id": "5f02eb6be41fcb36a3c4c4e2",
+    "name": "local-userpass",
+    "type": "local-userpass",
+    "config": {
+        "autoConfirm": false,
+        "confirmationFunctionName": "confirmFunc",
+        "resetFunctionName": "resetFunc",
+        "resetPasswordSubject": "https://df1412-simple-webhook.glitch.me/webhook",
+        "resetPasswordUrl": "https://df1412-simple-webhook.glitch.me/webhook",
+        "runConfirmationFunction": true,
+        "runResetFunction": true
+    },
+    "disabled": false
+}

@@ -1,0 +1,49 @@
+{
+    "id": "5f053df94076e5fac92184d3",
+    "database": "tracker",
+    "collection": "samples",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "fields": {
+                "_id": {},
+                "_partition": {},
+                "date": {},
+                "product": {},
+                "sales": {}
+            },
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "title": "Sample",
+        "required": [
+            "_id",
+            "_partition",
+            "product",
+            "sales",
+            "date"
+        ],
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "product": {
+                "bsonType": "string"
+            },
+            "sales": {
+                "bsonType": "int"
+            },
+            "date": {
+                "bsonType": "date"
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "id": "5f03fd9ce636dbc065bbf584",
+    "database": "tracker",
+    "collection": "users",
+    "roles": [
+        {
+            "name": "owner",
+            "apply_when": {
+                "_id": "%%user.id"
+            },
+            "read": true,
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "title": "User",
+        "required": [
+            "_id",
+            "_partition",
+            "user_id",
+            "name"
+        ],
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "user_id": {
+                "bsonType": "string"
+            },
+            "name": {
+                "bsonType": "string"
+            }
+        }
+    }
+}

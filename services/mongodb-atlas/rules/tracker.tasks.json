@@ -1,0 +1,57 @@
+{
+    "id": "5f07e0a6c351f0c7f48e0fef",
+    "database": "tracker",
+    "collection": "tasks",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "fields": {
+                "_id": {},
+                "_partition": {},
+                "assignee": {},
+                "category": {},
+                "name": {},
+                "status": {},
+                "sync": {}
+            },
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "title": "Task",
+        "required": [
+            "_id",
+            "_partition",
+            "name",
+            "status",
+            "sync"
+        ],
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "assignee": {
+                "bsonType": "string"
+            },
+            "name": {
+                "bsonType": "string"
+            },
+            "status": {
+                "bsonType": "string"
+            },
+            "category": {
+                "bsonType": "objectId"
+            },
+            "sync": {
+                "bsonType": "bool"
+            }
+        }
+    }
+}

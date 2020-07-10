@@ -1,0 +1,18 @@
+{
+    "id": "5f04181de636dbc065bfea07",
+    "name": "trigger0",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "UPDATE"
+        ],
+        "database": "tracker",
+        "collection": "tasks",
+        "service_name": "mongodb-atlas",
+        "match": {},
+        "full_document": true,
+        "unordered": false
+    },
+    "function_name": "functionTriggerDatabase",
+    "disabled": false
+}

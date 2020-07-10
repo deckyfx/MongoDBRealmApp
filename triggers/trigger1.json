@@ -1,0 +1,18 @@
+{
+    "id": "5f06df49c512849f7e4b133b",
+    "name": "trigger1",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "INSERT"
+        ],
+        "database": "tracker",
+        "collection": "write_queues",
+        "service_name": "mongodb-atlas",
+        "match": {},
+        "full_document": true,
+        "unordered": false
+    },
+    "function_name": "processQueue",
+    "disabled": false
+}

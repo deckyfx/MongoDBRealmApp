@@ -1,0 +1,45 @@
+{
+    "id": "5f06c1884076e5fac9a5d760",
+    "database": "tracker",
+    "collection": "write_queues",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "fields": {
+                "_id": {},
+                "_partition": {},
+                "collection": {},
+                "data": {}
+            },
+            "read": true,
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {
+        "title": "WriteQueue",
+        "required": [
+            "_id",
+            "_partition",
+            "collection",
+            "data"
+        ],
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "_partition": {
+                "bsonType": "string"
+            },
+            "collection": {
+                "bsonType": "string"
+            },
+            "data": {
+                "bsonType": "string"
+            }
+        }
+    }
+}
